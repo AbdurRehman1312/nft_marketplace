@@ -24,7 +24,7 @@ const Header = () => {
     return (
         <>
             <header>
-                <div className=' px-5 md:px-7 lg:px-5 xl:px-10 py-8 flex items-center justify-between'>
+                <div className=' md:container md:mx-auto px-3 py-8 flex items-center justify-between'>
                     <div className='flex items-center gap-5 lg:gap-4 xl:gap-8'>
                         <NavLink className='flex items-center gap-3 '>
                             <img src={images.logo} alt="" className='w-14 lg:w-12 xl:w-14' />

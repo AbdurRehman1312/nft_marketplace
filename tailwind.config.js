@@ -17,18 +17,22 @@ module.exports = {
       },
     },
     extend: {
+      backgroundImage:{
+        'dark-gradient': 'linear-gradient(to top, rgba(0, 0, 0, 0.9), 90%, rgba(0, 0, 0, 0.065))',
+      },
       colors: {
+        primary: "#141414",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#141414",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
+          DEFAULT: "#3F3F3F",
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
