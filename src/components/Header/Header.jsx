@@ -6,7 +6,7 @@ import OrangeBtnText from '../OrangeBtnText/OrangeBtnText'
 const links = [
     {
         name: 'Marketplace',
-        to: '/market-place'
+        to: '/marketplace'
     },
     {
         name: 'Create',

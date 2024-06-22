@@ -75,7 +75,7 @@ const NewsTrending = () => {
     return (
         <>
             <div className=' md:container md:mx-auto px-3 py-8'>
-                <h1 className='font-semibold'>News/Trending</h1>
+                <h1 className='font-semibold md:text-xl text-lg'>News/Trending</h1>
             </div>
             <div className='w-full'>
                 <Carousel
@@ -86,15 +86,17 @@ const NewsTrending = () => {
                 >
                     <CarouselContent>
                         {trendingNews.map((news, index) => (
-                            <CarouselItem key={index} className='h-[80vh] relative'>
+                            <CarouselItem key={index} className='h-[80vh] relative pl-0'>
                                 <img src={news.image} alt="" className='w-full h-[100%] object-cover' />
-                                <div className='bg-dark-gradient absolute bottom-0 left-0 right-0 w-full h-[30%] z-[2] container m-auto md:pt-16 pt-10'>
-                                    <div className='flex justify-between items-center gap-3'>
-                                        <div className='flex flex-col gap-3'>
-                                            <h1 className='text-white text-xl font-semibold'>{news.title}</h1>
-                                            <p className='text-white text-sm md:w-[45%] w-full limit_text font-extralight'>{news.description}</p>
+                                <div className=''>
+                                    <div className='bg-dark-gradient absolute bottom-0 lg:bottom-[-1%] left-0 right-0 w-full h-[35%] m-0 z-[2] flex justify-center items-center'>
+                                        <div className='flex justify-between items-center gap-3 w-full lg:px-10 pl-8 md:pr-4 pr-2'>
+                                            <div className='flex flex-col gap-3'>
+                                                <h1 className='text-white text-xl font-semibold'>{news.title}</h1>
+                                                <p className='text-white text-sm md:w-[45%] w-full limit_text font-extralight'>{news.description}</p>
+                                            </div>
+                                            <OrangeBtnText name={news.buttons.orange.name} style={news.buttons.orange.style} />
                                         </div>
-                                        <OrangeBtnText name={news.buttons.orange.name} style={news.buttons.orange.style} />
                                     </div>
                                 </div>
                                 <div className='flex items-center gap-5 absolute top-[5%] right-[1.5%]'>

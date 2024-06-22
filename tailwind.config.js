@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -17,8 +17,9 @@ module.exports = {
       },
     },
     extend: {
-      backgroundImage:{
+      backgroundImage: {
         'dark-gradient': 'linear-gradient(to top, rgba(0, 0, 0, 0.9), 90%, rgba(0, 0, 0, 0.065))',
+        'light-gradient': 'linear-gradient(to top, rgba(0, 0, 0, 0.6), 90%, rgba(0, 0, 0, 0.065))',
       },
       colors: {
         primary: "#141414",
@@ -78,4 +79,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
