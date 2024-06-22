@@ -6,7 +6,7 @@ import OrangeBtnText from '../OrangeBtnText/OrangeBtnText'
 const links = [
     {
         name: 'Marketplace',
-        to: '/marketplace'
+        to: '/market-place'
     },
     {
         name: 'Create',
@@ -53,7 +53,7 @@ const Header = () => {
                             src={search ? images.close : images.search}
                             alt="menu"
                             className="w-[28px] h-[28px] object-contain"
-                            onClick={() => setSearch((prev) => !prev)}
+                            onClick={() => setSearch((prev) => !prev) & setToggle(false)}
                         />
                     </div>
                     <div className="lg:hidden flex justify-end items-center">
@@ -61,7 +61,7 @@ const Header = () => {
                             src={toggle ? images.close : images.menu}
                             alt="menu"
                             className="w-[28px] h-[28px] object-contain"
-                            onClick={() => setToggle((prev) => !prev)}
+                            onClick={() => setToggle((prev) => !prev) & setSearch(false)}
                         />
                     </div>
                     
