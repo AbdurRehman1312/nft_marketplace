@@ -7,3 +7,4 @@ export { default as close } from "./close.png";
 export { default as search } from "./search.png";
 export { default as news1 } from "./news1.png";
 export { default as nft1 } from "./nft1.png";
+export { default as collect } from "./collect.png";

@@ -74,7 +74,8 @@ const NewsTrending = () => {
     )
     return (
         <>
-            <div className=' md:container md:mx-auto px-3 py-8'>
+        <section>
+        <div className=' md:container md:mx-auto px-3 py-8'>
                 <h1 className='font-semibold md:text-xl text-lg'>News/Trending</h1>
             </div>
             <div className='w-full'>
@@ -111,6 +112,8 @@ const NewsTrending = () => {
                     <CarouselNext className=" right-[1.5%] top-[50%]" />
                 </Carousel>
             </div>
+        </section>
+            
         </>
     )
 }

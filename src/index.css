@@ -56,3 +56,11 @@ body {
   border: 10px solid #ff8600;
   border-radius: 10px;
 }
+
+.bg_table {
+  background: #37383a;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
