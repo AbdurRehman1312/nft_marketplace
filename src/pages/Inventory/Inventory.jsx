@@ -148,7 +148,7 @@ const Inventory = () => {
         <h1 className='font-semibold md:text-xl text-lg'>My Inventory</h1>
         <div className='lg:w-[90%] w-full flex flex-wrap gap-5 lg-gap-0 md:gap-4 my-16'>
           {inventoryItems.map((item) => (
-            <NftCard styles={"mx-auto"} key={item.id} {...item} />
+            <NftCard styles={"mx-auto md:mx-0"} key={item.id} {...item} />
           ))}
         </div>
       </section>
