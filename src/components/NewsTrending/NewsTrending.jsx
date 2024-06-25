@@ -4,6 +4,7 @@ import * as images from "../../assets"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/components/ui/carousel"
 import OrangeBtnText from '../OrangeBtnText/OrangeBtnText'
 import GreyButton from '../GreyButton/GreyButton'
+import { Link } from 'react-router-dom'
 
 const trendingNews = [
     {
@@ -97,7 +98,9 @@ const NewsTrending = () => {
                                                     <h1 className='text-white text-xl font-semibold'>{news.title}</h1>
                                                     <p className='text-white text-sm md:w-[45%] w-full limit_text font-extralight'>{news.description}</p>
                                                 </div>
-                                                <OrangeBtnText name={news.buttons.orange.name} style={news.buttons.orange.style} />
+                                                <Link to={"/marketplace"}>
+                                                    <OrangeBtnText name={news.buttons.orange.name} style={news.buttons.orange.style} />
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

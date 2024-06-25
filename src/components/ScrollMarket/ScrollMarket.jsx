@@ -95,7 +95,7 @@ const ScrollMarket = () => {
       ]
   return (
     <>
-    <div className='grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-7 mt-10 sm:mt-0 px-3 md:px-10 w-full overflow-y-auto  md:h-[90vh] h-[120vh] xl:h-[100vh]'>
+    <div className='grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-7 mt-10 sm:mt-0 px-3 lg:px-10 w-full overflow-y-auto  md:h-[90vh] h-[120vh] xl:h-[100vh]'>
     {inventoryItems.map((item) => (
             <NftCard key={item.id} {...item} />
           ))}
