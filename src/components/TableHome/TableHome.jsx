@@ -82,7 +82,7 @@ const TableHome = () => {
     ]
     return (
         <>
-            <div className='flex items-center w-full px-4 gap-8'>
+            <div className='flex md:flex-row flex-col items-center w-full px-4 gap-8'>
                 <div className='md:w-[50%] w-full'>
                     <Table >
                         <TableHeader>
@@ -98,8 +98,8 @@ const TableHome = () => {
                                 Table1.map((table) => (
                                     <TableRow key={table.id}>
                                         <TableCell className="rounded-s-[20px] text-center">{table.id}</TableCell>
-                                        <TableCell><div className='flex items-center gap-3 text-base'>
-                                            <img src={table.collection_image} alt="" className='w-20' />
+                                        <TableCell><div className='flex items-center gap-3 text-sm md:text-base'>
+                                            <img src={table.collection_image} alt="" className='md:w-20 w-10' />
                                             <span>{table.collection_text}</span>
                                         </div></TableCell>
                                         <TableCell className="text-center">{table.floorPrice}</TableCell>
@@ -127,8 +127,8 @@ const TableHome = () => {
                                 Table2.map((table) => (
                                     <TableRow key={table.id}>
                                         <TableCell className="rounded-s-[20px] text-center">{table.id}</TableCell>
-                                        <TableCell><div className='flex items-center gap-3 text-base'>
-                                            <img src={table.collection_image} alt="" className='w-20' />
+                                        <TableCell><div className='flex items-center gap-3 text-sm md:text-base'>
+                                            <img src={table.collection_image} alt="" className='md:w-20 w-10' />
                                             <span>{table.collection_text}</span>
                                         </div></TableCell>
                                         <TableCell className="text-center">{table.floorPrice}</TableCell>

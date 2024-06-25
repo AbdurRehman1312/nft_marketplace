@@ -150,8 +150,8 @@ const Inventory = () => {
                   <TableCell className={`rounded-s-[20px] text-center capitalize ${transaction.type === "Buy" ? "text-green-500" : transaction.type === "Sell" ? "text-red-600" : "text-white"}`}>{transaction.type}</TableCell>
                   <TableCell>
                     <div className='flex items-center gap-3 text-base'>
-                      <img src={images.collect} alt="" className='w-20' />
-                      <div className='flex flex-col gap-1'>
+                      <img src={images.collect} alt="" className='md:w-20 w-10' />
+                      <div className='flex flex-col gap-1 text-sm md:text-base'>
                         <span>{transaction.asset}</span>
                         <span className='font-light'>{transaction.assetName}</span>
                       </div>
