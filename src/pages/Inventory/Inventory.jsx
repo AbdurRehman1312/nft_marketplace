@@ -11,7 +11,7 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
   boughtOrFloor: "Bought at: 2.1 ETH"
@@ -22,7 +22,7 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
   boughtOrFloor: "Bought at: 2.1 ETH"
@@ -33,7 +33,7 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
   boughtOrFloor: "Bought at: 2.1 ETH"
@@ -44,7 +44,7 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
   boughtOrFloor: "Bought at: 2.1 ETH"
@@ -55,7 +55,7 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
   boughtOrFloor: "Bought at: 2.1 ETH"
@@ -66,7 +66,7 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
   boughtOrFloor: "Bought at: 2.1 ETH"
@@ -77,7 +77,7 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
   boughtOrFloor: "Bought at: 2.1 ETH"
@@ -88,7 +88,7 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
   boughtOrFloor: "Bought at: 2.1 ETH"

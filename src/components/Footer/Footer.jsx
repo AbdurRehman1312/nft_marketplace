@@ -4,8 +4,8 @@ import * as images from "../../assets"
 const Footer = () => {
   return (
     <>
-      <footer className='bg-[#202020] mt-20 md:container md:mx-auto px-3 pt-16 pb-4'>
-        <div className=' flex justify-between md:flex-row flex-col gap-10'>
+      <footer className='bg-[#202020] mt-20 px-3 pt-16 pb-4'>
+        <div className=' md:container md:mx-auto flex justify-between md:flex-row flex-col gap-10'>
           <div className='md:w-[30%] w-full flex flex-col gap-7'>
             <div className='flex items-center gap-3 '>
               <img src={images.logo} alt="" className='w-14 lg:w-12 xl:w-14' />
@@ -16,16 +16,16 @@ const Footer = () => {
             </p>
             <div className='flex items-center gap-10'>
               <a href="" target='_blank' className='hover:opacity-80'>
-                <img src={images.discord} alt="" className='w-8' />
+                <img src={images.discord} alt="" className='w-7' />
               </a>
               <a href="" target='_blank' className='hover:opacity-80'>
-                <img src={images.twitter} alt="" className='w-8' />
+                <img src={images.twitter} alt="" className='w-7' />
               </a>
               <a href="" target='_blank' className='hover:opacity-80'>
-                <img src={images.insta} alt="" className='w-8' />
+                <img src={images.insta} alt="" className='w-6' />
               </a>
               <a href="" target='_blank' className='hover:opacity-80'>
-                <img src={images.yt} alt="" className='w-8' />
+                <img src={images.yt} alt="" className='w-7' />
               </a>
             </div>
           </div>

@@ -18,7 +18,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'dark-gradient': 'linear-gradient(to top, rgba(0, 0, 0, 0.9), 90%, rgba(0, 0, 0, 0.065))',
+        'dark-gradient': 'linear-gradient(to top, rgba(0, 0, 0, 0.56), 90%, rgba(0, 0, 0, 0.005))',
+        'dark-gradient2': 'linear-gradient(to bottom, rgba(0, 0, 0, 0.56), 70%, rgba(0, 0, 0, 0.005))',
+        'dark-gradient3': 'linear-gradient(to top, rgba(0, 0, 0, 0.56), 60%, rgba(0, 0, 0, 0.005))',
         'light-gradient': 'linear-gradient(to top, rgba(0, 0, 0, 0.6), 90%, rgba(0, 0, 0, 0.065))',
       },
       colors: {

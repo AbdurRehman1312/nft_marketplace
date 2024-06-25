@@ -82,14 +82,14 @@ const TableHome = () => {
     ]
     return (
         <>
-            <div className='flex md:flex-row flex-col items-center w-full gap-8'>
-                <div className='md:w-[50%] w-full'>
+            <div className='flex lg:flex-row flex-col items-center w-full gap-8'>
+                <div className='lg:w-[50%] w-full'>
                     <Table >
                         <TableHeader>
                             <TableRow>
                                 <TableHead className="text-center">Rank</TableHead>
                                 <TableHead className="">Collection</TableHead>
-                                <TableHead className="text-center">Floor price</TableHead>
+                                <TableHead className="text-center text-nowrap">Floor price</TableHead>
                                 <TableHead className="text-center">Volume</TableHead>
                             </TableRow>
                         </TableHeader>
@@ -98,7 +98,7 @@ const TableHome = () => {
                                 Table1.map((table) => (
                                     <TableRow key={table.id}>
                                         <TableCell className="rounded-s-[20px] text-center">{table.id}</TableCell>
-                                        <TableCell><div className='flex items-center gap-3 text-sm md:text-base'>
+                                        <TableCell><div className='flex items-center gap-3 text-smlg:text-base'>
                                             <img src={table.collection_image} alt="" className='md:w-20 w-10' />
                                             <span>{table.collection_text}</span>
                                         </div></TableCell>
@@ -109,13 +109,13 @@ const TableHome = () => {
                         </TableBody>
                     </Table>
                 </div>
-                <div className='md:w-[50%] w-full'>
+                <div className='lg:w-[50%] w-full'>
                 <Table >
                         <TableHeader>
                             <TableRow>
                                 <TableHead className="text-center">Rank</TableHead>
                                 <TableHead className="">Collection</TableHead>
-                                <TableHead className="text-center">Floor price</TableHead>
+                                <TableHead className="text-center text-nowrap">Floor price</TableHead>
                                 <TableHead className="text-center">Volume</TableHead>
                             </TableRow>
                         </TableHeader>

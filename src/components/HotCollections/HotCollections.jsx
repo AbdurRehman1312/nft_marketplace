@@ -9,11 +9,12 @@ const HotCollections = () => {
     return (
         <>
             <section>
-                <div className='md:container md:mx-auto px-3 py-10'>
-                    <h1 className='font-semibold md:text-xl text-lg my-10'>Hot collections</h1>
+                <div className='md:container md:mx-auto px-3 py-14'>
+                <h1 className='font-semibold md:text-xl text-lg pb-7 md:hidden'>Hot collections</h1>
                     <Tabs defaultValue="6h" onValueChange={(value) => setActiveTab(value)} >
                         <div className='flex items-center md:flex-row flex-col justify-between'>
-                            <TabsList className="flex items-center gap-4 mb-4">
+                            <TabsList className="flex flex-wrap md:flex-nowrap items-center gap-4 mb-4">
+                            <h1 className='font-semibold md:text-xl text-lg hidden md:block'>Hot collections</h1>
                                 <TabsTrigger value="6h" isActive={activeTab === "6h"} className="rounded-[20px]">6h</TabsTrigger>
                                 <TabsTrigger value="12h" isActive={activeTab === "12h"} className="rounded-[20px]">12h</TabsTrigger>
                                 <TabsTrigger value="24h" isActive={activeTab === "24h"} className="rounded-[20px]">24h</TabsTrigger>
