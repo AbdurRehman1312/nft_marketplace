@@ -3,10 +3,10 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 
 const Table = React.forwardRef(({ className, ...props }, ref) => (
-  <div className="relative w-full overflow-auto">
+  <div className="relative w-full overflow-auto [&::-webkit-scrollbar]:hidden">
     <table
       ref={ref}
-      className={cn("w-full caption-bottom ", className)}
+      className={cn("w-full caption-bottom  ", className)}
       {...props} />
   </div>
 ))
@@ -35,12 +35,12 @@ TableFooter.displayName = "TableFooter"
 
 const TableRow = React.forwardRef(({ className, ...props }, ref) => (
   <tr
-      ref={ref}
-      className={cn(
-          "",
-          className
-      )}
-      {...props} />
+    ref={ref}
+    className={cn(
+      "",
+      className
+    )}
+    {...props} />
 ))
 TableRow.displayName = "TableRow"
 
