@@ -8,43 +8,43 @@ const TopCollections = () => {
     )
     return (
         <>
-        <section>
-        <div className=' md:container md:mx-auto px-3 py-8'>
-                <h1 className='font-semibold md:text-xl text-lg'>Top collections</h1>
-            </div>
-            <div>
-                <Carousel
-                    plugins={[plugin.current]}
-                    className=""
-                    onMouseEnter={plugin.current.stop}
-                    onMouseLeave={plugin.current.reset}
-                    
-                >
-                    <CarouselContent>
-                        
+            <section>
+                <div className=' md:container md:mx-auto px-3 py-8'>
+                    <h1 className='font-semibold md:text-xl text-lg'>Top collections</h1>
+                </div>
+                <div>
+                    <Carousel
+                        plugins={[plugin.current]}
+                        className=""
+                        onMouseEnter={plugin.current.stop}
+                        onMouseLeave={plugin.current.reset}
+
+                    >
+                        <CarouselContent>
+
                             <CarouselItem className=''>
-                               <NftCard />
+                                <NftCard styles={"mx-auto xl:w-[19%]"} nftimg="nft1" />
                             </CarouselItem>
                             <CarouselItem className=''>
-                               <NftCard />
+                                <NftCard styles={"mx-auto xl:w-[19%]"} nftimg="nft2" />
                             </CarouselItem>
                             <CarouselItem className=''>
-                               <NftCard />
+                                <NftCard styles={"mx-auto xl:w-[19%]"} nftimg="nft3" />
                             </CarouselItem>
                             <CarouselItem className=''>
-                               <NftCard />
+                                <NftCard styles={"mx-auto xl:w-[19%]"} nftimg="nft4" />
                             </CarouselItem>
                             <CarouselItem className=''>
-                               <NftCard />
+                                <NftCard styles={"mx-auto xl:w-[19%]"} nftimg="nft5" />
                             </CarouselItem>
 
-                    </CarouselContent>
-                    <CarouselPrevious className="left-[1.5%] top-[50%]" />
-                    <CarouselNext className=" right-[1.5%] top-[50%]" />
-                </Carousel>
-            </div>
-        </section>
-           
+                        </CarouselContent>
+                        <CarouselPrevious className="left-[1.5%] top-[50%]" />
+                        <CarouselNext className=" right-[1.5%] top-[50%]" />
+                    </Carousel>
+                </div>
+            </section>
+
         </>
     )
 }

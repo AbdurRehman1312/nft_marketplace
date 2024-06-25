@@ -83,7 +83,7 @@ const TableHome = () => {
     return (
         <>
             <div className='flex items-center w-full px-4 gap-8'>
-                <div className='w-[50%]'>
+                <div className='md:w-[50%] w-full'>
                     <Table >
                         <TableHeader>
                             <TableRow>
@@ -112,7 +112,7 @@ const TableHome = () => {
                         </TableBody>
                     </Table>
                 </div>
-                <div className='w-[50%]'>
+                <div className='md:w-[50%] w-full'>
                 <Table >
                         <TableHeader>
                             <TableRow>
@@ -135,9 +135,6 @@ const TableHome = () => {
                                         <TableCell className=" rounded-e-[20px] text-center">{table.volume}</TableCell>
                                     </TableRow>
                                 ))}
-
-
-
                         </TableBody>
                     </Table>
                 </div>
