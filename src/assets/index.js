@@ -12,3 +12,7 @@ export { default as nft3 } from "./nft3.png";
 export { default as nft4 } from "./nft4.png";
 export { default as nft5 } from "./nft5.png";
 export { default as collect } from "./collect.png";
+export { default as discord } from "./discord.png";
+export { default as twitter } from "./twitter.png";
+export { default as insta } from "./insta.png";
+export { default as yt } from "./yt.png";
