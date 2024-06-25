@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import NftCard from '../NftCard/NftCard';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
-const TopCollections = () => {
+const LatestCollections = () => {
     const carouselRef = useRef(null);
     const [activeIndex, setActiveIndex] = useState(2);
 
@@ -49,9 +49,9 @@ const TopCollections = () => {
 
     return (
         <>
-            <section>
-                <div className='md:container md:mx-auto px-3 py-8'>
-                    <h1 className='font-semibold md:text-xl text-lg'>Top collections</h1>
+            <section className='mt-16'>
+                <div className='md:container md:mx-auto px-3 py-2'>
+                    <h1 className='font-semibold md:text-xl text-lg'>Latest Collections</h1>
                 </div>
                 <div ref={carouselRef}>
                     <Carousel
@@ -85,4 +85,4 @@ const TopCollections = () => {
     );
 };
 
-export default TopCollections;
+export default LatestCollections;

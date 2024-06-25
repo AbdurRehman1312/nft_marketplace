@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import NftCard from '../NftCard/NftCard';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
-const TopCollections = () => {
+const LatestSales = () => {
     const carouselRef = useRef(null);
     const [activeIndex, setActiveIndex] = useState(2);
 
@@ -41,7 +41,7 @@ const TopCollections = () => {
         { styles: 'xl:w-[95%] md:w-full lg:w-[80%] mx-auto', highlighted: false, badge: false, desc: false, nftimg: 'nft3' },
         {
             styles: 'xl:w-[95%] md:w-full lg:w-[80%] mx-auto', buy: true, highlighted: true, badge: true, desc: true, nftimg: 'nft1', nftName: "Anime girls",
-            boughtOrFloor: "Floor price: 2.1 ETH", category: "Hot"
+            boughtOrFloor: "Floor price: 2.1 ETH", category: "Just Sold"
         },
         { styles: 'xl:w-[95%] md:w-full lg:w-[80%] mx-auto', highlighted: false, badge: false, desc: false, nftimg: 'nft4' },
         { styles: 'xl:w-[95%] md:w-full lg:w-[80%] mx-auto', highlighted: false, badge: false, desc: false, nftimg: 'nft5' }
@@ -49,9 +49,9 @@ const TopCollections = () => {
 
     return (
         <>
-            <section>
-                <div className='md:container md:mx-auto px-3 py-8'>
-                    <h1 className='font-semibold md:text-xl text-lg'>Top collections</h1>
+            <section className='mt-16'>
+                <div className='md:container md:mx-auto px-3 py-2'>
+                    <h1 className='font-semibold md:text-xl text-lg'>Latest Hot Sales</h1>
                 </div>
                 <div ref={carouselRef}>
                     <Carousel
@@ -85,4 +85,4 @@ const TopCollections = () => {
     );
 };
 
-export default TopCollections;
+export default LatestSales;

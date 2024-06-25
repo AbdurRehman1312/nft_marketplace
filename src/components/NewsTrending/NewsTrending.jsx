@@ -84,6 +84,7 @@ const NewsTrending = () => {
                         className="w-full"
                         onMouseEnter={plugin.current.stop}
                         onMouseLeave={plugin.current.reset}
+                        id="hero-carousel"
                     >
                         <CarouselContent>
                             {trendingNews.map((news, index) => (

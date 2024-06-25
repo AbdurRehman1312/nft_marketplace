@@ -11,7 +11,10 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]"
+  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  nftName: "Animegirl#152",
+  nftCaption: "Anime girls",
+  boughtOrFloor: "Bought at: 2.1 ETH"
 },
 {
   id: 2,
@@ -19,7 +22,10 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]"
+  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  nftName: "Animegirl#152",
+  nftCaption: "Anime girls",
+  boughtOrFloor: "Bought at: 2.1 ETH"
 },
 {
   id: 3,
@@ -27,7 +33,10 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]"
+  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  nftName: "Animegirl#152",
+  nftCaption: "Anime girls",
+  boughtOrFloor: "Bought at: 2.1 ETH"
 },
 {
   id: 4,
@@ -35,7 +44,10 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]"
+  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  nftName: "Animegirl#152",
+  nftCaption: "Anime girls",
+  boughtOrFloor: "Bought at: 2.1 ETH"
 },
 {
   id: 5,
@@ -43,7 +55,10 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]"
+  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  nftName: "Animegirl#152",
+  nftCaption: "Anime girls",
+  boughtOrFloor: "Bought at: 2.1 ETH"
 },
 {
   id: 6,
@@ -51,7 +66,10 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]"
+  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  nftName: "Animegirl#152",
+  nftCaption: "Anime girls",
+  boughtOrFloor: "Bought at: 2.1 ETH"
 },
 {
   id: 7,
@@ -59,7 +77,10 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]"
+  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  nftName: "Animegirl#152",
+  nftCaption: "Anime girls",
+  boughtOrFloor: "Bought at: 2.1 ETH"
 },
 {
   id: 8,
@@ -67,7 +88,10 @@ const inventoryItems = [{
   buy: true,
   badge: false,
   highlighted: false,
-  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]"
+  style: "lg:w-[20%] xl:w-[22%] md:w-[40%]",
+  nftName: "Animegirl#152",
+  nftCaption: "Anime girls",
+  boughtOrFloor: "Bought at: 2.1 ETH"
 },
 ]
 const latestTransactions = [
@@ -131,7 +155,7 @@ const Inventory = () => {
       <section className='my-10'>
         <h1 className='font-semibold md:text-xl text-lg'>Latest Transactions</h1>
         <Table className="my-10" >
-        <TableCaption>No more transactions</TableCaption>
+          <TableCaption>No more transactions</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead className="text-center">Type</TableHead>

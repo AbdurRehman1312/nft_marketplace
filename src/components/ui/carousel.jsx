@@ -19,6 +19,7 @@ function useCarousel() {
 
 const Carousel = React.forwardRef((
   {
+    id,
     orientation = "horizontal",
     opts,
     setApi,
@@ -86,13 +87,13 @@ const Carousel = React.forwardRef((
   }, [api, onSelect])
 
   return (
-    (<CarouselContext.Provider
+    ( <CarouselContext.Provider
       value={{
+        id, // Include the id in the context
         carouselRef,
-        api: api,
+        api,
         opts,
-        orientation:
-          orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
+        orientation: orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
         scrollPrev,
         scrollNext,
         canScrollPrev,
@@ -130,22 +131,31 @@ const CarouselContent = React.forwardRef(({ className, ...props }, ref) => {
 })
 CarouselContent.displayName = "CarouselContent"
 
-const CarouselItem = React.forwardRef(({ className, ...props }, ref) => {
-  const { orientation } = useCarousel()
+const CarouselItem = React.forwardRef(({ className, index, ...props }, ref) => {
+  const { orientation, id, activeIndex } = useCarousel();
+  const isActive = id === "top-collection" && index === activeIndex; // Check if active for top-collection carousel
+  
+  // Conditional class name for scaling
+  const itemClassName = cn(
+    "w-full shrink-0 grow-0 transition-transform",
+    isActive ? "scale-100" : "scale-100", // Apply scaling transformation only if active
+    id === "hero-carousel" ? "basis-full" : "basis-full md:basis-1/3 lg:basic-1/5 xl:basis-1/5",
+    orientation === "horizontal" ? "pl-4" : "pt-4",
+    className
+  );
 
   return (
-    (<div
+    <div
       ref={ref}
       role="group"
       aria-roledescription="slide"
-      className={cn(
-        "min-w-0 shrink-0 grow-0 basis-full",
-        orientation === "horizontal" ? "pl-4" : "pt-4",
-        className
-      )}
-      {...props} />)
+      className={itemClassName}
+      {...props}
+    />
   );
-})
+});
+
+
 CarouselItem.displayName = "CarouselItem"
 
 const CarouselPrevious = React.forwardRef(({ className, variant = "outline", size = "icon", ...props }, ref) => {
