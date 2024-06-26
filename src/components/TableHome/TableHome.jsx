@@ -84,7 +84,7 @@ const TableHome = () => {
         <>
             <div className='flex lg:flex-row flex-col items-center w-full gap-8'>
                 <div className='lg:w-[50%] w-full'>
-                    <Table >
+                    <Table>
                         <TableHeader>
                             <TableRow>
                                 <TableHead className="text-center">Rank</TableHead>
@@ -110,7 +110,7 @@ const TableHome = () => {
                     </Table>
                 </div>
                 <div className='lg:w-[50%] w-full'>
-                <Table >
+                    <Table >
                         <TableHeader>
                             <TableRow>
                                 <TableHead className="text-center">Rank</TableHead>

@@ -4,9 +4,7 @@ import ScrollMarket from '../ScrollMarket/ScrollMarket';
 import {
     Select,
     SelectContent,
-    SelectGroup,
     SelectItem,
-    SelectLabel,
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
@@ -43,7 +41,6 @@ const TabsMarket = () => {
                                             </SelectContent>
                                         </Select>
                                     </div>
-
                                 </div>
                                 <div>
                                     <h1 className='font-semibold text-sm lg:text-base  mb-2'>To</h1>

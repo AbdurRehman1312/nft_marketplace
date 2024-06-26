@@ -14,6 +14,7 @@ import MarketPlace from './pages/MarketPlace/MarketPlace.jsx';
 import Create from './pages/Create/Create.jsx';
 import Inventory from './pages/Inventory/Inventory.jsx';
 import BuyNft from './pages/BuyNft/BuyNft.jsx';
+import SellNft from './pages/SellNft/SellNft.jsx';
 
 
 
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
       <Route path="create" element={<Create />} />
       <Route path="inventory" element={<Inventory />} />
       <Route path="buy-nft" element={<BuyNft />} />
+      <Route path="sell-nft" element={<SellNft />} />
     </Route>
   )
 );
