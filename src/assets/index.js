@@ -17,3 +17,4 @@ export { default as twitter } from "./twitter.png";
 export { default as insta } from "./insta.png";
 export { default as yt } from "./yt.png";
 export { default as globe } from "./globe.png";
+export { default as upload } from "./upload.png";
