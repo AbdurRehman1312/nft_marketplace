@@ -12,7 +12,7 @@ const TabsMarket = () => {
     const [activeTab, setActiveTab] = useState("All");
     return (
         <>
-            <section className='md:container md:mx-auto py-12 md:mt-16 mt-8'>
+            <section className='md:container md:mx-auto py-12 md:mt-16 mt-8 px-2'>
                 <Tabs defaultValue="All" onValueChange={(value) => setActiveTab(value)} >
                     <div className='flex items-start md:flex-row flex-col '>
                         <div className='w-full md:w-[30%] lg:w-[40%] xl:w-[30%] flex flex-col items-center sm:items-start'>
@@ -28,7 +28,7 @@ const TabsMarket = () => {
                             <div className='flex items-center flex-col  lg:flex-row gap-6 md:gap-10'>
                                 <div>
                                     <h1 className='font-semibold text-sm lg:text-base  mb-2'>From</h1>
-                                    <div className='flex w-full'>
+                                    <div className='flex w-full px-2'>
                                         <input type="number" className=' p-2 rounded-s-[10px] md:w-[120px] bg-black appearance-none border-0 focus:outline-none' />
                                         <Select value='Doge'>
                                             <SelectTrigger className="">
@@ -44,7 +44,7 @@ const TabsMarket = () => {
                                 </div>
                                 <div>
                                     <h1 className='font-semibold text-sm lg:text-base  mb-2'>To</h1>
-                                    <div className='flex  w-full'>
+                                    <div className='flex w-full px-2'>
                                         <input type="number" className=' p-2 rounded-s-[10px]  md:w-[120px] bg-black appearance-none border-0 focus:outline-none' />
                                         <Select value='Doge'>
                                             <SelectTrigger className="">

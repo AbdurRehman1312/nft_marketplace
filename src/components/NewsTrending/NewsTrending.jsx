@@ -106,7 +106,10 @@ const NewsTrending = () => {
                                     </div>
                                     <div className='flex items-center gap-5 absolute top-[5%] right-[1.5%]'>
                                         {news.buttons.grey.map((btn, btnIndex) => (
-                                            <GreyButton key={btnIndex} name={btn.name} />
+                                            <Link to={"/sell-nft"}>
+                                                <GreyButton key={btnIndex} name={btn.name} />
+                                            </Link>
+
                                         ))}
                                     </div>
                                 </CarouselItem>
