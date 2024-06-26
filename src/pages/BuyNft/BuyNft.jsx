@@ -20,7 +20,7 @@ const BuyNft = () => {
 
     const data = {
         amount: '150 DOGE',
-        price: '$4.34',
+        price: '245,3 DOGE',
         status: 'At Floor',
         duration: 'In 5 Days',
         id: '1Lbcfr7sAHJASKnxnmj75571'
@@ -46,7 +46,7 @@ const BuyNft = () => {
                     <div className='flex flex-col gap-5'>
                         <div>
                             <p className='font-light text-gray-300'>Current price</p>
-                            <p className='text-lg lg:text-2xl mt-2'>{data.price}</p>
+                            <p className='text-lg lg:text-2xl mt-2 font-semibold'>{data.price}</p>
                         </div>
                         <div className='flex items-center gap-4'>
                             {/* Toggle button text based on state */}
