@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import * as images from "../../assets";
 import {
   Select,
@@ -12,6 +12,17 @@ import { ChevronDown } from 'lucide-react';
 
 const SellNft = () => {
   const [saleType, setSaleType] = useState('');
+  const [selected, setSelected] = useState('1 month');
+  const [isOpen, setIsOpen] = useState(false);
+
+  const options = ['1 week', '1 month', '3 months', '1 year'];
+
+  const toggleDropdown = () => setIsOpen(!isOpen);
+
+  const handleSelect = (option) => {
+      setSelected(option);
+      setIsOpen(false);
+  };
 
   return (
     <div className='md:container md:mx-auto px-3 py-8'>
@@ -58,9 +69,9 @@ const SellNft = () => {
               <h2 className="text-white text-sm mb-3 font-semibold mt-8">Starting price</h2>
               <div className='flex w-full mt-4'>
                 <input type="number" placeholder='Amount' className=' p-2.5 text-sm rounded-s-[10px] w-full bg-black appearance-none border-0 focus:outline-none' />
-                <Select value='Doge'>
-                  <SelectTrigger className="w-[15%]">
-                    <SelectValue />
+                <Select >
+                  <SelectTrigger className="w-[25%] sm:w-[20%]">
+                    <SelectValue placeholder="Doge"/>
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="Doge">Doge</SelectItem>
@@ -74,19 +85,30 @@ const SellNft = () => {
           </div>
           <div className='mt-6'>
             <h2 className="text-white mb-3 font-semibold">Duration</h2>
-            <div className='flex w-full mt-4'>
-              <input type="number" placeholder='1 month' className=' p-2.5 text-sm rounded-s-[10px] w-full bg-black appearance-none border-0 focus:outline-none' />
-              <Select value='down'>
-                <SelectTrigger className="w-[15%]">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem className="hidden" value="down"><ChevronDown /></SelectItem>
-                  <SelectItem value="onemonth">1 month</SelectItem>
-                  <SelectItem value="twomonths">2 months</SelectItem>
-                  <SelectItem value="threemonths">3 months</SelectItem>
-                </SelectContent>
-              </Select>
+            <div className='w-full mt-4'>
+              <div className="relative w-full">
+                <div className="bg-black text-gray-400 w-[90%] text-nowrap rounded-s-[10px] text-sm font-medium py-2 pl-3 pr-10 rounded cursor-pointer appearance-none focus:outline-none"
+                  onClick={toggleDropdown}>
+                  {selected}
+                  <button
+                    className="absolute inset-y-0 right-0 flex items-center px-2 bg-[#4a4a4a] rounded-e-[10px]"
+                    onClick={toggleDropdown}
+                  >
+                    <ChevronDown className="h-5 w-5 text-white" />
+                  </button>
+                </div>
+                {isOpen && (
+                  <div className="absolute  w-full bg-black mt-1 rounded-[10px]">
+                    {options.map((option, index) => (
+                      <div key={index}
+                        className="text-gray-400 text-sm text-nowrap py-2 pl-3 pr-10 hover:bg-gray-700 rounded cursor-pointer"
+                        onClick={() => handleSelect(option)}>
+                        {option}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
             <h2 className="text-white mb-3 font-semibold mt-8">Summary</h2>
             <div className='w-full mt-4 text-gray-300'>
@@ -106,10 +128,10 @@ const SellNft = () => {
                 <p className='text-center'>7.5 <span className=''>%</span></p>
               </div>
             </div>
-              <div className='flex items-center justify-between mt-5'>
-                <p>Total potential earnings</p>
-                <p className='text-gray-300'>--DOGE</p>
-              </div>
+            <div className='flex items-center justify-between mt-5'>
+              <p>Total potential earnings</p>
+              <p className='text-gray-300'>--DOGE</p>
+            </div>
           </div>
         </div>
       </div>
