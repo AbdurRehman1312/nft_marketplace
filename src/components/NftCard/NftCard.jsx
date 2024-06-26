@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import OrangeBtnArrow from '../OrangeBtnArrow/OrangeBtnArrow'
 import { Link } from 'react-router-dom'
 
-const NftCard = ({ buy = false, badge = true, highlighted = true, styles, nftimg, desc = true, nftName, nftCaption, boughtOrFloor, category }) => {
+const NftCard = ({ buy = false, badge = true, highlighted = true, styles, nftimg, desc = true, nftName, nftCaption, boughtOrFloor, category, link = "/marketplace" }) => {
     return (
         <div className={` md:h-[250px] h-[300px]   relative rounded-[30px] border-4 ${styles} ${highlighted ? 'border-orange-500' : 'border-secondary'} overflow-hidden`}>
             {badge ? (<Badge className="text-nowrap">{category}</Badge>) : null}
@@ -16,7 +16,7 @@ const NftCard = ({ buy = false, badge = true, highlighted = true, styles, nftimg
                         <p className='text-white font-extralight'>{nftCaption}</p>
                         {buy ? (<h1 className='text-white font-semibold'>{boughtOrFloor}</h1>) : null}
                     </div>
-                    <Link to='/marketplace' className='text-white text-sm font-semibold flex-shrink-0'><OrangeBtnArrow /></Link>
+                    <Link to={link} className='text-white text-sm font-semibold flex-shrink-0'><OrangeBtnArrow /></Link>
                 </div>
             </div>) : null}
         </div>

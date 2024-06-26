@@ -13,6 +13,7 @@ import Home from './pages/Home/Home.jsx';
 import MarketPlace from './pages/MarketPlace/MarketPlace.jsx';
 import Create from './pages/Create/Create.jsx';
 import Inventory from './pages/Inventory/Inventory.jsx';
+import BuyNft from './pages/BuyNft/BuyNft.jsx';
 
 
 
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path="marketplace" element={<MarketPlace />} />
       <Route path="create" element={<Create />} />
       <Route path="inventory" element={<Inventory />} />
+      <Route path="buy-nft" element={<BuyNft />} />
     </Route>
   )
 );

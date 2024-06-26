@@ -14,7 +14,8 @@ const inventoryItems = [{
   style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
-  boughtOrFloor: "Bought at: 2.1 ETH"
+  boughtOrFloor: "Bought at: 2.1 ETH",
+  link: "/buy-nft"
 },
 {
   id: 2,
@@ -25,7 +26,8 @@ const inventoryItems = [{
   style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
-  boughtOrFloor: "Bought at: 2.1 ETH"
+  boughtOrFloor: "Bought at: 2.1 ETH",
+  link: "/buy-nft"
 },
 {
   id: 3,
@@ -36,7 +38,8 @@ const inventoryItems = [{
   style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
-  boughtOrFloor: "Bought at: 2.1 ETH"
+  boughtOrFloor: "Bought at: 2.1 ETH",
+  link: "/buy-nft"
 },
 {
   id: 4,
@@ -47,7 +50,8 @@ const inventoryItems = [{
   style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
-  boughtOrFloor: "Bought at: 2.1 ETH"
+  boughtOrFloor: "Bought at: 2.1 ETH",
+  link: "/buy-nft"
 },
 {
   id: 5,
@@ -58,7 +62,8 @@ const inventoryItems = [{
   style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
-  boughtOrFloor: "Bought at: 2.1 ETH"
+  boughtOrFloor: "Bought at: 2.1 ETH",
+  link: "/buy-nft"
 },
 {
   id: 6,
@@ -69,7 +74,8 @@ const inventoryItems = [{
   style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
-  boughtOrFloor: "Bought at: 2.1 ETH"
+  boughtOrFloor: "Bought at: 2.1 ETH",
+  link: "/buy-nft"
 },
 {
   id: 7,
@@ -80,7 +86,8 @@ const inventoryItems = [{
   style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
-  boughtOrFloor: "Bought at: 2.1 ETH"
+  boughtOrFloor: "Bought at: 2.1 ETH",
+  link: "/buy-nft"
 },
 {
   id: 8,
@@ -91,7 +98,8 @@ const inventoryItems = [{
   style: "w-full lg:w-[30%] xl:w-[23%] md:w-[30%]",
   nftName: "Animegirl#152",
   nftCaption: "Anime girls",
-  boughtOrFloor: "Bought at: 2.1 ETH"
+  boughtOrFloor: "Bought at: 2.1 ETH",
+  link: "/buy-nft"
 },
 ]
 const latestTransactions = [

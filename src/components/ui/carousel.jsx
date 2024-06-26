@@ -133,9 +133,8 @@ CarouselContent.displayName = "CarouselContent"
 
 const CarouselItem = React.forwardRef(({ className, index, ...props }, ref) => {
   const { orientation, id, activeIndex } = useCarousel();
-  const isActive = id === "top-collection" && index === activeIndex; // Check if active for top-collection carousel
+  const isActive = id === "top-collection" && index === activeIndex; 
   
-  // Conditional class name for scaling
   const itemClassName = cn(
     "w-full shrink-0 grow-0 transition-transform",
     isActive ? "scale-100" : "scale-100", // Apply scaling transformation only if active
